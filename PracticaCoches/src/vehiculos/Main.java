@@ -1,4 +1,4 @@
-package coches;
+package vehiculos;
 
 public class Main {
 
