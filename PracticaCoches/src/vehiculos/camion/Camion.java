@@ -20,7 +20,7 @@ public class Camion extends Vehiculos {
 
 	@Override
 	public String toString() {
-		return "Camion [capacidadCarga=" + capacidadCarga + "]";
+		return String.format("Camion --> [ Marca= %s || Modelo= %s || Matrícula= %s || Capacidad de carga = %d ]", super.getMarca(), super.getModelo(), super.getMatricula(), this.capacidadCarga);
 	}
 
 	@Override
@@ -32,12 +32,12 @@ public class Camion extends Vehiculos {
 		if (getClass() != obj.getClass())
 			return false;
 		Camion other = (Camion) obj;
-		return capacidadCarga == other.capacidadCarga;
+		return super.equals(obj) && this.capacidadCarga == other.capacidadCarga;
 	}
 
 	@Override
 	public void acelerar() {
-
+		 System.out.println("El camión acelera lentamente.");
 	}
 
 	public void cargar(double peso) {
