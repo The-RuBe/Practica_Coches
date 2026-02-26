@@ -1,7 +1,5 @@
 package vehiculos.ciclomotor;
 
-import java.util.Objects;
-
 import vehiculos.Vehiculo;
 
 public class Ciclomotor extends Vehiculo {

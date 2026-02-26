@@ -1,7 +1,5 @@
 package vehiculos.ciclomotor.quad;
 
-import java.util.Objects;
-
 import vehiculos.Vehiculo;
 
 public class Quad extends Vehiculo{
