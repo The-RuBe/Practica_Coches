@@ -40,7 +40,7 @@ public abstract class Vehiculo {
 
 	@Override
 	public String toString() {
-		return String.format("Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s ]", marca, modelo, matricula);
+		return String.format("Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s ]", this.marca, this.modelo, this.matricula);
 	}
 
 	@Override
@@ -53,8 +53,8 @@ public abstract class Vehiculo {
 			return false;
 
 		Vehiculo other = (Vehiculo) obj;
-		return Objects.equals(marca, other.marca) && Objects.equals(matricula, other.matricula)
-				&& Objects.equals(modelo, other.modelo);
+		return this.marca.equals(other.marca) && this.matricula.equals(other.matricula)
+				&& this.modelo.equals(other.modelo);
 	}
 
 	public abstract void acelerar();
