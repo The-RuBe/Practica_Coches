@@ -35,7 +35,7 @@ public class Main {
 
 		System.out.println("método acelerar() del camión:");
 
-		Vehiculos v1 = camion;
+		Vehiculo v1 = camion;
 
 		v1.acelerar();
 
