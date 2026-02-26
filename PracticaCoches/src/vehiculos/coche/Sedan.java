@@ -21,7 +21,7 @@ public class Sedan extends Coche {
 	public String toString() {
 		return String.format(
 				"Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s || Combustible = %s || Puertas = %d ]",
-				super.getMarca(), super.getModelo(), super.getMatricula(), super.getCombustible(), this.puertas);
+				this.getMarca(), this.getModelo(), this.getMatricula(), this.getCombustible(), this.puertas);
 	}
 
 	@Override

@@ -21,8 +21,7 @@ public class Ranchera extends Coche {
 	public String toString() {
 		return String.format(
 				"Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s || Combustible = %s || Capacidad de maletero = %d]",
-				super.getMarca(), super.getModelo(), super.getMatricula(), super.getCombustible(),
-				this.capacidadMaletero);
+				this.getMarca(), this.getModelo(), this.getMatricula(), this.getCombustible(), this.capacidadMaletero);
 	}
 
 	@Override

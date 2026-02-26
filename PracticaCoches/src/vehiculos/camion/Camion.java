@@ -20,7 +20,8 @@ public class Camion extends Vehiculo {
 
 	@Override
 	public String toString() {
-		return String.format("Camion --> [ Marca = %s || Modelo = %s || Matrícula = %s || Capacidad de carga = %d ]", super.getMarca(), super.getModelo(), super.getMatricula(), this.capacidadCarga);
+		return String.format("Camion --> [ Marca = %s || Modelo = %s || Matrícula = %s || Capacidad de carga = %d ]",
+				this.getMarca(), this.getModelo(), this.getMatricula(), this.capacidadCarga);
 	}
 
 	@Override
@@ -37,7 +38,7 @@ public class Camion extends Vehiculo {
 
 	@Override
 	public void acelerar() {
-		 System.out.println("El camión acelera lentamente.");
+		System.out.println("El camión acelera lentamente.");
 	}
 
 	public void cargar(double peso) {
