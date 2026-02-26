@@ -38,5 +38,6 @@ public class Main {
 		System.out.println("método cargar() del camión:");
 		camion.cargar(8000);
 		camion.cargar(15000);
+		sedan.arrancar(1);
 	}
 }
