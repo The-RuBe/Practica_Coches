@@ -1,4 +1,4 @@
-package vehiculos.quad;
+package vehiculos.ciclomotor.quad;
 
 import java.util.Objects;
 

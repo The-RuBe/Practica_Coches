@@ -1,4 +1,4 @@
-package vehiculos.moto;
+package vehiculos.ciclomotor.moto;
 
 import java.util.Objects;
 
