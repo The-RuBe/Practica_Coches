@@ -14,8 +14,8 @@ public class Main {
 
 		Moto moto = new Moto("Yamaha", "MT-07", "2222BBB", 700, "naked");
 		Quad quad = new Quad("Can-Am", "Outlander", "3333CCC", 650, 500);
-		Sedan sedan = new Sedan("BMW", "Serie 3", "5555EEE", "Diesel", 4);
-		Ranchera ranchera = new Ranchera("Skoda", "Octavia", "6666FFF", "Gasolina", 600);
+		Sedan sedan = new Sedan("BMW", "Serie 3", "5555EEE", "DIESEL", 4);
+		Ranchera ranchera = new Ranchera("Skoda", "Octavia", "6666FFF", "GASOLINA", 600);
 		Camion camion = new Camion("MAN", "TGX", "7777GGG", 12000);
 		Camper camper = new Camper("Volkswagen", "California", "9999JJJ", "L1H1",
 				"Cama, fregadero, placas solares y nevera");
@@ -39,5 +39,7 @@ public class Main {
 		camion.cargar(8000);
 		camion.cargar(15000);
 		sedan.arrancar(1);
+		sedan.arrancar(1);
+		sedan.arrancar(0);
 	}
 }
