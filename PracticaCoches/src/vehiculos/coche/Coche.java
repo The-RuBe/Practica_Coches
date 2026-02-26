@@ -7,23 +7,23 @@ public abstract class Coche extends Vehiculo {
 	private Combustible combustible;
 	private boolean encendido = false;
 
-	public Coche(String marca, String modelo, String matricula, Combustible combustible) {
+	public Coche(String marca, String modelo, String matricula, String combustible) {
 		super(marca, modelo, matricula);
-		this.combustible = combustible;
+		setCombustible(combustible);
 	}
 
-	public Combustible getCombustible() {
-		return combustible;
+	public String getCombustible() {
+		return combustible.toString();
 	}
 
-	public void setCombustible(Combustible combustible) {
-		this.combustible = combustible;
+	public void setCombustible(String combustible) {
+		this.combustible = Combustible.valueOf(combustible);
 	}
 
 	@Override
 	public String toString() {
 		return String.format("Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s || Combustible = %s ]",
-				this.getMarca(), this.getModelo(), this.getMatricula(), this.combustible);
+				this.getMarca(), this.getModelo(), this.getMatricula(), this.combustible.toString());
 	}
 
 	@Override

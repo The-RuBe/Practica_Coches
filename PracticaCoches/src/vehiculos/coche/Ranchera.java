@@ -4,7 +4,7 @@ public class Ranchera extends Coche {
 
 	private int capacidadMaletero;
 
-	public Ranchera(String marca, String modelo, String matricula, Combustible combustible, int capacidadMaletero) {
+	public Ranchera(String marca, String modelo, String matricula, String combustible, int capacidadMaletero) {
 		super(marca, modelo, matricula, combustible);
 		this.capacidadMaletero = capacidadMaletero;
 	}
@@ -21,7 +21,7 @@ public class Ranchera extends Coche {
 	public String toString() {
 		return String.format(
 				"Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s || Combustible = %s || Capacidad de maletero = %d]",
-				this.getMarca(), this.getModelo(), this.getMatricula(), this.getCombustible(), this.capacidadMaletero);
+				this.getMarca(), this.getModelo(), this.getMatricula(), this.getCombustible().toString(), this.capacidadMaletero);
 	}
 
 	@Override

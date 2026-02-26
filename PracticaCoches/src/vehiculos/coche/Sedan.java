@@ -4,7 +4,7 @@ public class Sedan extends Coche {
 
 	private int puertas;
 
-	public Sedan(String marca, String modelo, String matricula, Combustible combustible, int puertas) {
+	public Sedan(String marca, String modelo, String matricula, String combustible, int puertas) {
 		super(marca, modelo, matricula, combustible);
 		this.puertas = puertas;
 	}
@@ -21,7 +21,7 @@ public class Sedan extends Coche {
 	public String toString() {
 		return String.format(
 				"Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s || Combustible = %s || Puertas = %d ]",
-				this.getMarca(), this.getModelo(), this.getMatricula(), this.getCombustible(), this.puertas);
+				this.getMarca(), this.getModelo(), this.getMatricula(), this.getCombustible().toString(), this.puertas);
 	}
 
 	@Override
