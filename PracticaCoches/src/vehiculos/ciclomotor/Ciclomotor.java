@@ -43,6 +43,4 @@ public abstract class Ciclomotor extends Vehiculo {
 		return Double.doubleToLongBits(cilindrada) == Double.doubleToLongBits(other.cilindrada);
 	}
 	
-	
-	
 }
