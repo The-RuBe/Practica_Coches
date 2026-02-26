@@ -19,7 +19,7 @@ public class Camper extends Furgoneta {
 
 	@Override
 	public String toString() {
-		return String.format("Furgoneta [marca= %s, modelo= %s, matricula= %s, descripcion= %s]", this.getMarca(),
+		return String.format("Camper [marca= %s, modelo= %s, matricula= %s, descripcion= %s]", this.getMarca(),
 				this.getModelo(), this.getMatricula(), this.getDescripcion());
 	}
 
@@ -36,4 +36,13 @@ public class Camper extends Furgoneta {
 		return super.equals(obj) && this.descripcion.equals(other.descripcion);
 	}
 
+//	Método
+	public void repostar(double litros) {
+	    if (litros <= 0) {
+	        System.out.println("La cantidad de litros debe ser mayor que 0.");
+	    } else {
+	        System.out.println(String.format("La camper %s %s ha repostado %.2f litros.", 
+	            this.getMarca(), this.getModelo(), litros));
+	    }
+	}
 }
