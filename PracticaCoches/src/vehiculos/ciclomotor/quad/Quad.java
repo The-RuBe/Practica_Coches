@@ -1,13 +1,15 @@
 package vehiculos.ciclomotor.quad;
 
-import vehiculos.Vehiculo;
+import vehiculos.ciclomotor.Ciclomotor;
 
-public class Quad extends Vehiculo{
+public class Quad extends Ciclomotor{
 	
 	private double tamaño;
 
-	public Quad(String marca, String modelo, String matricula, double tamaño) {
-		super(marca, modelo, matricula);
+
+
+	public Quad(String marca, String modelo, String matricula, double cilindrada, double tamaño) {
+		super(marca, modelo, matricula, cilindrada);
 		this.tamaño = tamaño;
 	}
 

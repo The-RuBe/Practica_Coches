@@ -2,14 +2,16 @@ package vehiculos.ciclomotor.moto;
 
 import java.util.Objects;
 
-import vehiculos.Vehiculo;
+import vehiculos.ciclomotor.Ciclomotor;
 
-public class Moto extends Vehiculo{
+public class Moto extends Ciclomotor{
 	
 	private String tipo;
 
-	public Moto(String marca, String modelo, String matricula, String tipo) {
-		super(marca, modelo, matricula);
+
+
+	public Moto(String marca, String modelo, String matricula, double cilindrada, String tipo) {
+		super(marca, modelo, matricula, cilindrada);
 		this.tipo = tipo;
 	}
 
