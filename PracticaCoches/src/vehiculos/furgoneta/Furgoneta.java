@@ -2,7 +2,7 @@ package vehiculos.furgoneta;
 
 import vehiculos.Vehiculo;
 
-public class Furgoneta extends Vehiculo {
+public abstract class Furgoneta extends Vehiculo {
 
 	private Tipo tipo;
 
