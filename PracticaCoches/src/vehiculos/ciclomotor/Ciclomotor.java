@@ -2,7 +2,7 @@ package vehiculos.ciclomotor;
 
 import vehiculos.Vehiculo;
 
-public class Ciclomotor extends Vehiculo {
+public abstract class Ciclomotor extends Vehiculo {
 	
 	private double cilindrada;
 
