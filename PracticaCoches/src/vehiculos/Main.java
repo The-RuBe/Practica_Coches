@@ -1,6 +1,9 @@
 package vehiculos;
 
 import vehiculos.camion.Camion;
+import vehiculos.coche.Coche;
+import vehiculos.coche.Ranchera;
+import vehiculos.coche.Sedan;
 import vehiculos.furgoneta.Furgoneta;
 
 public class Main {

@@ -1,8 +1,8 @@
 package vehiculos.camion;
 
-import vehiculos.Vehiculos;
+import vehiculos.Vehiculo;
 
-public class Camion extends Vehiculos {
+public class Camion extends Vehiculo {
 	private int capacidadCarga;
 
 	public Camion(String marca, String modelo, String matricula, int capacidadCarga) {
@@ -20,7 +20,7 @@ public class Camion extends Vehiculos {
 
 	@Override
 	public String toString() {
-		return String.format("Camion --> [ Marca= %s || Modelo= %s || Matrícula= %s || Capacidad de carga = %d ]", super.getMarca(), super.getModelo(), super.getMatricula(), this.capacidadCarga);
+		return String.format("Camion --> [ Marca = %s || Modelo = %s || Matrícula = %s || Capacidad de carga = %d ]", super.getMarca(), super.getModelo(), super.getMatricula(), this.capacidadCarga);
 	}
 
 	@Override

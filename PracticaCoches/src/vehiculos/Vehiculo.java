@@ -2,13 +2,13 @@ package vehiculos;
 
 import java.util.Objects;
 
-public abstract class Vehiculos {
+public abstract class Vehiculo {
 
 	private String marca;
 	private String modelo;
 	private String matricula;
 
-	public Vehiculos(String marca, String modelo, String matricula) {
+	public Vehiculo(String marca, String modelo, String matricula) {
 		this.marca = marca;
 		this.modelo = modelo;
 		this.matricula = matricula;
@@ -40,7 +40,7 @@ public abstract class Vehiculos {
 
 	@Override
 	public String toString() {
-		return String.format("Vehiculos --> [ Marca= %s || Modelo= %s || Matrícula= %s ]", marca, modelo, matricula);
+		return String.format("Vehiculos --> [ Marca = %s || Modelo = %s || Matrícula = %s ]", marca, modelo, matricula);
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public abstract class Vehiculos {
 		if (getClass() != obj.getClass())
 			return false;
 
-		Vehiculos other = (Vehiculos) obj;
+		Vehiculo other = (Vehiculo) obj;
 		return Objects.equals(marca, other.marca) && Objects.equals(matricula, other.matricula)
 				&& Objects.equals(modelo, other.modelo);
 	}
