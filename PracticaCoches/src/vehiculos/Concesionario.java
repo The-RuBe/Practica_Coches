@@ -1,27 +1,29 @@
 package vehiculos;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Concesionario {
+    
+    private Vehiculo[] listaVehiculos;
+    private int numVehiculos;          
 
-    private List<Vehiculo> listaVehiculos;
-
-    public Concesionario() {
-        listaVehiculos = new ArrayList<>();
+    public Concesionario(int capacidadMaxima) {
+        this.listaVehiculos = new Vehiculo[capacidadMaxima];
+        this.numVehiculos = 0;
     }
 
-    // Añadir vehículo al final de la lista
-    public void addVehiculo(Vehiculo v) {
-        listaVehiculos.add(v);
+    public void añadirVehiculo(Vehiculo vehiculo) {
+        if (numVehiculos < listaVehiculos.length) {
+            listaVehiculos[numVehiculos] = vehiculo;
+            numVehiculos++;
+            System.out.println("Vehículo añadido: " + vehiculo.getMarca());
+        } else {
+            System.out.println("Error: El concesionario está lleno.");
+        }
     }
 
-    // Eliminar vehículo
-    public void eliminarVehiculo(Vehiculo v) {
-        listaVehiculos.remove(v);
-    }
-
-    public List<Vehiculo> getListaVehiculos() {
-        return listaVehiculos;
+    public void mostrarInventario() {
+        System.out.println("--- Inventario del Concesionario ---");
+        for (int i = 0; i < numVehiculos; i++) {
+            System.out.println(listaVehiculos[i].toString());
+        }
     }
 }

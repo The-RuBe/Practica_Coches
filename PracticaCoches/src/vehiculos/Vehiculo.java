@@ -1,7 +1,5 @@
 package vehiculos;
 
-import java.util.Objects;
-
 public abstract class Vehiculo {
 
 	private String marca;

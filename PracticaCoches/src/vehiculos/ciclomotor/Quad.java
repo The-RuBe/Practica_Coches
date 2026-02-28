@@ -1,6 +1,4 @@
-package vehiculos.ciclomotor.quad;
-
-import vehiculos.ciclomotor.Ciclomotor;
+package vehiculos.ciclomotor;
 
 public class Quad extends Ciclomotor{
 	

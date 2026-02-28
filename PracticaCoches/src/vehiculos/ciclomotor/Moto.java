@@ -1,8 +1,6 @@
-package vehiculos.ciclomotor.moto;
+package vehiculos.ciclomotor;
 
 import java.util.Objects;
-
-import vehiculos.ciclomotor.Ciclomotor;
 
 public class Moto extends Ciclomotor{
 	
