@@ -21,7 +21,7 @@ public abstract class Ciclomotor extends Vehiculo {
 
 	@Override
 	public void acelerar() {
-		// TODO Auto-generated method stub
+		System.out.println("Este vehículo ha alcanza los 45 km/h en 20 segundos");
 		
 	}
 

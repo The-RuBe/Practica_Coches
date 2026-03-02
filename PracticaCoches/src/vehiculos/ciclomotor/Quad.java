@@ -21,7 +21,7 @@ public class Quad extends Ciclomotor{
 
 	@Override
 	public void acelerar() {
-		// TODO Auto-generated method stub
+		System.out.println("Este vehículo alcanza los 60 km/h en 25 segundos");
 		
 	}
 

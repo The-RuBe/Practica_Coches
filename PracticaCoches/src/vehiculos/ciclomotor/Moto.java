@@ -42,7 +42,7 @@ public class Moto extends Ciclomotor{
 
 	@Override
 	public void acelerar() {
-		// TODO Auto-generated method stub
+		System.out.println("Este vehículo alcanza los 50 km/h en 15 segundos");
 		
 	}
 	
