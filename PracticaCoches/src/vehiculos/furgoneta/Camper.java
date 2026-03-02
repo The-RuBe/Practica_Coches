@@ -45,4 +45,9 @@ public class Camper extends Furgoneta {
 	            this.getMarca(), this.getModelo(), litros));
 	    }
 	}
+
+	@Override
+	public void acelerar() {
+		System.out.println("Este vehículo puede alcanzar los 100 km/h en 15 segundos");
+	}
 }

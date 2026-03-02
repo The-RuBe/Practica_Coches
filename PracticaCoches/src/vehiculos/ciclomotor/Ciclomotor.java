@@ -20,12 +20,6 @@ public abstract class Ciclomotor extends Vehiculo {
 	}
 
 	@Override
-	public void acelerar() {
-		System.out.println("Este vehículo ha alcanza los 45 km/h en 20 segundos");
-		
-	}
-
-	@Override
 	public String toString() {
 		return String.format("Ciclomotor --> [ Marca = %s || Modelo = %s || Matrícula = %s || Cilindrada = %f]", this.getMarca(), this.getModelo(), this.getMatricula(),this.getCilindrada());
 	}

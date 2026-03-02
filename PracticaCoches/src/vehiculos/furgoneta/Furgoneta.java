@@ -39,9 +39,4 @@ public abstract class Furgoneta extends Vehiculo {
 		return super.equals(obj) && this.tipo.equals(other.tipo);
 	}
 
-	@Override
-	public void acelerar() {
-		System.out.println(this.toString());
-	}
-
 }
