@@ -1,4 +1,6 @@
-package vehiculos;
+package vehiculos.camion;
+
+import vehiculos.Vehiculo;
 
 public class Camion extends Vehiculo {
 	private int capacidadCarga;

@@ -1,5 +1,6 @@
 package vehiculos;
 
+import vehiculos.camion.Camion;
 import vehiculos.ciclomotor.Moto;
 import vehiculos.ciclomotor.Quad;
 import vehiculos.coche.Ranchera;
